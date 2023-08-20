@@ -4,13 +4,14 @@ import TodoForm from './TodoForm';
 import "./TodoApp.css"
 
 function TodoApp() {
-    const [todos, setTodos] = useState([]);
+    const [todos, setTodos] = useState([]); // To store the input data created empty  state where will push the all the data
 
-    console.log(todos);
+    // To add new todo in the list
     const addTodo = (todo) => {
         setTodos([...todos, todo]);
     };
 
+    //To update todo
     const updateTodo = (id, updatedTodo) => {
         const updatedTodos = todos.map((todo) =>
             todo.id === id ? updatedTodo : todo
@@ -18,6 +19,8 @@ function TodoApp() {
         setTodos(updatedTodos);
     };
 
+
+    // to delete the todo
     const deleteTodo = (id) => {
         const updatedTodos = todos.filter((todo) => todo.id !== id);
         setTodos(updatedTodos);

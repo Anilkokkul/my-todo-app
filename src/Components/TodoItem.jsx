@@ -9,6 +9,7 @@ function TodoItem({ todo, updateTodo, deleteTodo }) {
     );
     const statusOptions = ['Not Completed', 'Completed']
 
+    // To handle the status change
     const handleStatusChange = (NewStatus) => {
         const updatedTodo = { ...todo, status: NewStatus };
         updateTodo(updatedTodo.id, updatedTodo);
@@ -18,6 +19,7 @@ function TodoItem({ todo, updateTodo, deleteTodo }) {
         setEditing(true);
     };
 
+    //To save the edited content 
     const handleSave = () => {
         const updatedTodo = { ...todo, task: editedTask, description: editedDescription };
         updateTodo(updatedTodo.id, updatedTodo);
