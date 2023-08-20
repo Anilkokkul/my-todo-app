@@ -1,0 +1,12 @@
+label{
+    font-weight: 600;
+    text-align: end;
+}
+.TodoList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 10px;
+}

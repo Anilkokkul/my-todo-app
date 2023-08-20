@@ -1,0 +1,72 @@
+.todo-card{
+    width: 300px;
+    background-color: #ccf5d3;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: start;
+    height: 200px;
+    font-size: 14px;
+    position: relative;
+}
+
+.todo-card p{
+    overflow: auto;
+    margin: 5px;
+}
+
+.todo-card select{
+    border: none;
+    background-color: #ff7c7e;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.todo-card select option{
+    background-color: white;
+    color: black;
+}
+
+.updatebtn{
+    width: 100px;
+    height: 35px;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: #13ad89;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+button{
+    width: 100px;
+    height: 35px;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: #ec0909;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.buttons{
+    position: absolute;
+    top: 177px;
+    right: 10px;
+}
+.editTask input{
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.editTask{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.editTask label{
+
+}
