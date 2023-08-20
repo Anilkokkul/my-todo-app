@@ -51,14 +51,14 @@ function TodoItem({ todo, updateTodo, deleteTodo }) {
             ) : (
                 <div className='Card'>
                     <p><b>Task Name :</b>{todo.task}</p>
-                    <p style={{maxHeight:"85px"}}><b>Task Description:</b> {todo.description}</p>
-                    <p><b>Status:</b> <select value={todo.status} onChange={(e) => handleStatusChange(e.target.value)}>
+                    <p style={{ maxHeight: "85px" }}><b>Task Description:</b> {todo.description}</p>
+                    <p><b>Status:</b> <select style={{ background: todo.status === "Completed" ? "green" : "red" }} value={todo.status} onChange={(e) => handleStatusChange(e.target.value)}>
                         {statusOptions.map((option) => (
                             <option key={option} value={option}>{option === "Not Completed" ? "Not Completed" : "Completed"}</option>
                         ))}</select></p>
-                        <div className='buttons'>
-                    <button className='updatebtn' onClick={handleEdit}>Edit</button>
-                    <button onClick={handleDelete}>Delete</button>
+                    <div className='buttons'>
+                        <button className='updatebtn' onClick={handleEdit}>Edit</button>
+                        <button onClick={handleDelete}>Delete</button>
                     </div>
                 </div>
             )}
